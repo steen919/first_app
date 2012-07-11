@@ -1,3 +1,60 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the example controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "compass";
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+$base-link-color: #00f;
+
+a {
+  color: $base-link-color;
+}
+
+a:visited {
+  // This reduces the lightness of the color (in HSL terms) 
+  // by 50%, leaving hue and saturation alone
+  color: darken($base-link-color, 20%);
+}
+
+a:hover {
+  // This increases the lightness of the color (in HSL terms) 
+  // by 50%, leaving hue and saturation alone
+  color: lighten($base-link-color, 20%);
+}
+
+figcaption {
+  // Generates an rgba() color value with 50% opacity
+  background-color: transparentize(#fff, 0.5);
+}
+
+
+
+#container {
+  margin: 10px auto;
+  padding: 5px;
+  width: 800px;
+  background-color: #eee;
+
+  // If the device is narrower than 940px, switch to a fluid layout
+  @media screen and (max-width:940px) {
+    width: auto;
+  }
+
+  #main-content {
+    width: 600px;
+    margin: 10px auto;
+    padding: 5px;
+    background-color:lighten(red, 30%);
+    @media screen and (max-width:940px) {
+      width: 63.8%;
+    }
+  }
+}
