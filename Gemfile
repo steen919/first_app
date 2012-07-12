@@ -6,6 +6,9 @@ gem 'haml-rails', '~> 0.3.4'
 gem 'compass-rails', '~> 1.0.3'
 gem 'markdown-rails', '~> 0.2.0'
 
+gem 'eventmachine', '~> 1.0.0.beta.4.1'
+gem 'thin', '~> 1.4.1'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
