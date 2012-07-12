@@ -4,6 +4,7 @@ gem 'rails', '3.2.1'
 
 gem 'haml-rails', '~> 0.3.4'
 gem 'compass-rails', '~> 1.0.3'
+gem 'markdown-rails', '~> 0.2.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
