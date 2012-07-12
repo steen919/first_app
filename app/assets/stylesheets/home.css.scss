@@ -7,26 +7,58 @@
 
 
 
-
+@import "compass";
 
 #container {
   margin: 10px auto;
   padding: 5px;
   width: 800px;
-  background-color: #eee;
+  background-color: darken(#eee, 5%);
+  @include border-radius(5px);
 
   // If the device is narrower than 940px, switch to a fluid layout
   @media screen and (max-width:940px) {
     width: auto;
   }
+  
+  header {
+    p{
+      display:inline;
+      img {
+        vertical-align:middle;
+        display:inline;
+        margin-left:5px;
+      }
+    }    
+    h1 {
+      display:inline;
+      margin-left:20px;
+    }
+  }
 
   #main-content {
     width: 600px;
     margin: 10px auto;
-    padding: 5px;
-    background-color:lighten(red, 30%);
+    padding: 10px;
+    background-color:lighten(blue, 40%);
     @media screen and (max-width:940px) {
       width: 63.8%;
     }
   }
+  
+  footer {
+    p{
+      display:inline;
+      img {
+        vertical-align:middle;
+        display:inline;
+        margin-left:5px;
+      }
+    }    
+    h1 {
+      display:inline;
+      margin-left:20px;
+    }
+  }
+      
 }

@@ -1,5 +1,6 @@
 FirstApp::Application.routes.draw do
   get "home/index"
+  get "home/haml"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

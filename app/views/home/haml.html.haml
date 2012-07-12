@@ -1,0 +1,43 @@
+/ Detta är en kommentar
+%h1 HTML Ipsum Presents
+:markdown
+  Please, **For the love of [God](http://www.god.com/),**
+  don't use [Haml](http://haml-lang.com) for marking-up your content!
+  
+  > Detta blir ett blockquote.
+  
+  Use **`markdown`** instead :-)
+  
+  1. It's easier
+  2. Bla blah blah...
+  
+  ## Now comes the rest in haml
+  
+%p
+  %strong Pellentesque habitant morbi tristique
+  senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+  %em Aenean ultricies mi vitae est.
+  Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
+  = succeed "," do
+    %code commodo vitae
+  ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+  %a{:href => "#"} Donec non enim
+  in turpis pulvinar facilisis. Ut felis.
+%h2 Header Level 2
+%ol
+  %li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  %li Aliquam tincidunt mauris eu risus.
+%blockquote
+  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+%h3 Header Level 3
+%ul
+  %li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  %li Aliquam tincidunt mauris eu risus.
+%pre
+  %code
+    :preserve          
+      #header h1 a { 
+        display: block; 
+        width: 300px; 
+        height: 80px; 
+      }

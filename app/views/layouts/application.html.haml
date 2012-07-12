@@ -1,10 +1,29 @@
 !!!
 %html(lang="sv")
   %head
-    %meta{:charset => "utf-8"}/
-    %title Test
+    %meta{:charset => "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "First App"
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "Stefan Engvall", :name => "author"}
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    = yield(:head)
   %body
-    = yield
+    #container
+      %header
+        :markdown
+          ![Rails logo](/assets/rails.png)
+          # Huvudet hamnar här
+      %hr
+      = render 'layouts/navigation'
+      %hr
+      #main-content{:role => "main"}
+        = yield
+      %hr
+      %footer
+        :markdown
+          ![Rails logo](/assets/rails.png)
+          # Foten hamnar här

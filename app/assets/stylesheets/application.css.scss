@@ -15,7 +15,6 @@
 
 $base-font-size: 16px;
 $base-line-height: 24px;
-
 @include establish-baseline;
 
 $base-link-color: #00f;
@@ -34,9 +33,4 @@ a:hover {
   // This increases the lightness of the color (in HSL terms) 
   // by 50%, leaving hue and saturation alone
   color: lighten($base-link-color, 20%);
-}
-
-figcaption {
-  // Generates an rgba() color value with 50% opacity
-  background-color: transparentize(#fff, 0.5);
 }

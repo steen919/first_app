@@ -12,6 +12,7 @@ gem 'markdown-rails', '~> 0.2.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'heroku'
+  gem 'thin'
 end
 
 group :production do
